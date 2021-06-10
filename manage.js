@@ -23,6 +23,20 @@ var items = {
         
         
         },
+    modi: function(m){
+        var t = this[m];
+        var num = t.number;
+        var color = t.color;
+        var size = t.size;
+        var quantity = t.quantity;
+
+        var modi_quantity = document.getElementById('modify_quantity').value;
+        t.quantity = modi_quantity;
+        quantity = t.quantity;
+
+        window.alert('품번: ' + num + ', 색상: ' + color + ', 사이즈: ' + size + ', 수량: ' + quantity+'로 수정');
+    
+    }
 };
 
 
@@ -68,4 +82,9 @@ function deleteRow(obj) {
     var table = document.getElementById("myTable");
     table.deleteRow(index);
    
+ }
+
+ function modify(){
+    var m = document.getElementById('modify_num').value;
+    items.modi(m);
  }
