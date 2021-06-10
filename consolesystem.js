@@ -1,3 +1,4 @@
+
 var items = {
     row1: {
 
@@ -27,7 +28,7 @@ var items = {
     row5 : {
         number: 'YMP20101',
         color: 'Blue',
-        siz: 'S',
+        size: 'S',
         quantity: '1'
     }
 };
@@ -36,4 +37,21 @@ console.log('row2 = ',items.row2);
 console.log('row3 = ',items.row3);
 console.log('row4 = ',items.row4);
 console.log('row5 = ',items.row5);
+
+items.row1.quantity = 15;
+
+console.log('modified row1 quantity =', items.row1.quantity);
+
+items.row6 = {number: 'YWM20311', color: 'PINK', size: 'XXS', quantity : '6'};
+
+console.log('modified items list = ', items);
+
+delete items.row3;
+
+console.log('second modified items list = ', items);
+
+
+
+
+
 
