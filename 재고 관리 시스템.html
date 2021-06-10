@@ -16,6 +16,9 @@
 
         <input type="button" size="3" value="등록"  onclick="addList();" > 
 
+        <input type="reset" value="초기화">
+
+
         <br><br><br>
 
         <table border="4" bordercolor="silver" width ="700" id="myTable">
@@ -31,7 +34,14 @@
             </thead>
             <tbody id="tbody"></tbody>
         </table>
+
+
+        <input type="text" id="search_in" value="상품 번호를 입력하시오." onclick="this.select();">
+        <input type="button" value="추가" onclick=""  >
+
+
     </form>
+
 
     <script type="text/javascript" src="manage.js">
     </script>
