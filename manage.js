@@ -55,3 +55,10 @@ function addList() {
     }
 
 }
+
+function readRow(){
+    var x = document.getElementById("search_in").value;
+    items.show(x);
+
+
+}
